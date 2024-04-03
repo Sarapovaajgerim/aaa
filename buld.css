@@ -1,0 +1,81 @@
+
+ul{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+ul li{
+    border-radius: 20px;
+    color: white;
+}
+ul li ::before{
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+ul li ::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: aqua;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.5s;
+}
+ul lu :hover ::before ul li :hover ::after{
+    transform: scaleX(1);
+}
+button{
+    border-radius: 25px;
+    background: gray;
+}
+ body{
+    font-family: Arial sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: gray;
+ }
+ h1{
+ 
+    color: white;
+   
+ }
+ h3{
+    color: white;
+ }
+ h5{
+    margin-left: 45px;
+    color: white;
+    font-size: 30px;
+ }
+ h4{
+    margin-left: 450px;
+    color: white;
+    font-size: 30px;
+ }
+ .main-photo{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+ }
+ .main-photo img{
+    height: 220px;
+    width: 190px;
+    border-radius: 50px;
+    border: #1cd8d2;
+ }
+   select button{
+   border-radius: 25px;
+  }
+.aii{
+   margin-left: 1100px;
+}
+.main2{
+   margin-left: 1000px;
+}
